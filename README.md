@@ -1,3 +1,5 @@
+This code has been merged into the general pipeline, but please take a look my usage of levenshtein distance to merge messages.
+
 This pipeline is used with my Twitch Chat Highlights, which saves only the most interests moments to video files, with metadata in the filename. That project stores all Twitch messages in this format: "streamName$username:message|seconds since epoch" . I remove special characters from "message", so this is the lowest cost way for me store it. Also, there's some mathematical quality filters which prevent certain messages from ever being saved to the database.
 
 Usage: chatget.py [streamname] [timeAt] [duration]. All variables are derived from the video file.
